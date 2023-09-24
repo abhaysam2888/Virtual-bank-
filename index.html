@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tichkule Bank of Trust</title>
+    <!-- tailwind css link -->
+    <link rel="stylesheet" href="./output.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- tailwind cli -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <!-- nav bar start-->
+        <nav class="flex justify-around items-center w-full h-20 border-b max-md:justify-between z-50">
+            <!-- nav logo -->
+            <div class="mt-3">
+                <img src="./assets/bank-3277108_1280.png" alt="" class="w-16">
+            </div>
+            <!-- nav links -->
+            <div class="text-lg  max-md:absolute max-md:bg-slate-950 max-md:top-20 max-md:w-screen max-md:hidden none z-20 max-md:animate-[pulse_1s_ease-in-out]" id="navLinks">
+                <ul class="flex space-x-8 max-md:block max-md:space-x-0 max-md:space-y-10 max-md:text-center max-md:text-white max-md:py-10 font-medium">
+                    <li><a href="" class="hover:text-blue-800">Home</a></li>
+                    <li><a href="" class="hover:text-blue-800">Contact Us</a></li>
+                    <li> <a href="" class="hover:text-blue-800">Privacy Policy</a></li>
+                    <li> <a href="#form" class="hover:text-blue-800">Create Account</a></li>
+                </ul>
+            </div>
+            <!-- nav responsive slider -->
+            <div class="hidden max-md:block text-5xl mr-4" id="repose-bar">
+                <p>&#8801</p>
+            </div>
+        </nav>
+    </header>
+    <!-- main start -->
+    <main>
+        <!-- form -->
+        <div class="w-8/12 border-[8px] border-green-300 mx-auto rounded-md mt-10 max-[500px]:w-full">
+            <!-- images -->
+            <div class="flex items-center justify-evenly border-b border-gray-300 flex-wrap">
+                <div class="w-[500px]">
+                    <p class="text-5xl font-semibold leading-[3.7rem] text-center max-md:text-3xl">Open Bank Account Easy opening and Applying.</p>
+                </div>
+                <div class="animate-bounce">
+                    <img src="./assets/CreditCard-1-01.png" alt="">
+                </div>
+            </div>
+            <!-- personal information -->
+            <div class="w-[80%] h-20 mx-auto bg-green-200 mt-5 flex justify-between items-center shadow-md max-md:justify-center">
+                <div class="ml-10 max-md:ml-0">
+                    <p class="text-2xl font-semibold text-gray-600 text-center">Fill The details</p>
+                </div>
+                <div class="mr-10 w-10 bg-green-400 h-10 flex items-center justify-center rounded-full max-md:hidden animate-pulse">
+                    <i class="fa-solid fa-angle-down text-gray-600 "></i>
+                </div>
+            </div>
+            <!-- form section -->
+            <form id="#form">
+                <!-- name section -->
+                <div class="w-[80%] h-full mx-auto mt-10">
+                    <div class="mb-5">
+                        <label class="text-2xl font-medium ml-20 max-[900px]:ml-0">Name</label>
+                    </div>
+                    <div class="flex justify-evenly flex-wrap">
+                        <div>
+                            <input type="text" name="" id="fName" class="border-green-400 border h-10 rounded-md w-80 hover:bg-slate-100 px-3 max-md:w-[90%]" placeholder="Minimum 3 character">
+                            <p class="mt-2 capitalize">fist name</p>
+                        </div>
+                        <div>
+                            <input type="text" name="" id="lName" class="border-green-400 border h-10 rounded-md w-80 hover:bg-slate-100 px-3 max-md:w-[90%]" placeholder="Minimum 3 character">
+                            <p class="mt-2 capitalize">last name</p>
+                        </div>
+                    </div>
+                    <!-- deposit balance -->
+                    <div class="mt-8 mx-auto">
+                        <div>
+                            <label class="text-2xl font-medium ml-20 max-[900px]:ml-0">Deposit balance</label>
+                        </div>
+                        <div class="mx-auto">
+                            <input type="number" name="" id="depositBal" class="border-green-400 border h-10 rounded-md w-80 hover:bg-slate-100 px-3 ml-20 mt-5 max-md:w-[90%] max-md:ml-0" placeholder="Maximum 10000 allowed">
+                        </div>
+                    </div>
+                    <!-- submit button -->
+                    <div class="mt-10 mb-10 ml-20 max-md:ml-0">
+                        <button id="submit" class="w-24 h-10 bg-green-500 text-white font-bold rounded-md">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- footer start -->
+    <footer></footer>
+</body>
+<!-- script -->
+<script src="./index.js"></script>
+</html>
