@@ -35,8 +35,7 @@ Follow these steps to set up the Virtual Bank project locally:
 
 1. Clone this repository:
    ```shell
-   git clone https://github.com/
-   your-username/virtual-bank.git
+   git clone https://github.com/abhaysam2888/Virtual-bank-.git
    
 2. Social media link:
 
